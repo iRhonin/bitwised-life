@@ -13,6 +13,7 @@ with open(join(dirname(__file__), 'minimal', 'application.py')) as v_file:
 
 dependencies = [
     'restfulpy >= v2.6.9',
+    'easycli',
 
     # deployment
     'gunicorn',

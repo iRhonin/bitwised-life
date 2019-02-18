@@ -1,14 +1,15 @@
-from nanohttp import text
-from restfulpy.controllers import RootController, RestController
+from nanohttp import text, Controller
+from restfulpy.controllers import RootController
 
 import minimal
 
 
-class VersionController(RestController):
+class VersionController(Controller):
 
     @text
     def get(self):
         return minimal.application.__version__
+
 
 class Root(RootController):
 
